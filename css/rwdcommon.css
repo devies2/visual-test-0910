@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@media only screen and (max-width:1142px) {
+
+    .row { width:100%; margin:0 auto;
+        padding-left:10px; 
+        padding-right:10px;  }
+    .topmenu .search_box { position:absolute; top:3px; left:10px; }            
+
+}
+
+@media only screen and (max-width:1070px) {
+
+    .h1NavWrap { 
+        border-top:1px solid #dedede}
+    .h1Nav { position:relative; height:auto }
+    .h1Nav h1 { font-size:30px; 
+        color:#000; line-height:1; padding-top:25px;
+        text-align:center }    
+    .h1Nav h1 span { font-size:14px; 
+            display:block;  letter-spacing:3.5px}  
+    
+    .h1Nav .nav { position:static; 
+        top:0; right:0; text-align:center }
+    .h1Nav .nav .depth1 > li { 
+        display:inline-block; position:relative; } 
+    .h1Nav .nav .depth1 > li > a {
+        position:relative; 
+        display:block; padding:30px 50px 30px;
+        font-size:17px; color:#666;
+        font-family:'나눔고딕';
+        margin-top:10px; font-weight:bold;
+        /* border-left:1px solid #d2d3d5  */
+    }       
+    /* .h1Nav .nav .depth1 > li:first-child > a { border:none } */
+    .h1Nav .nav .depth1 > li > a:before {
+        content:''; width:1px; height:10px; 
+        background:#d2d3d5; position:absolute;
+        left:0; top:50%; transform:translateY(-50%); }
+    .h1Nav .nav .depth1 > li:first-child > a:before { display:none }   
+    .nav .depth2 { position:absolute; top:100%; left:0px;
+        width:100%; background:#fff; padding:15px 25px;
+        display:none; 
+        /* transition:all 0.5s  */
+    }
+    /* .nav .depth1 > li:hover .depth2 { display:block;  }     */
+    .nav .depth2 > li { line-height:31px; font-size:13px;
+        color:rgba(0,0,0,0.6); text-align:center; 
+        border-top:1px solid rgba(0,0,0,0.15);
+        transition:all 0.5s }
+    .nav .depth2 > li:hover { color:rgba(0,0,0,0.25);
+        text-indent:1em }
+    .nav .depth2 > li:first-child { border:none }              
+
+
+}
+
+@media only screen and (max-width:875px) {
+
+    .h1Nav h1 { font-size:30px; 
+        color:#000; line-height:1; padding-top:29px;
+        padding-bottom:29px; 
+        text-align:center }    
+
+    .h1Nav .nav { position:static; 
+        top:0; right:0; text-align:center;
+        display:none  }
+
+    .h1Nav .open_nav { display:block;
+        position:absolute; right:10px;
+        top:50%; transform:translateY(-50%);
+        font-size:30px; 
+    }     
+    .h1Nav .close_nav { display:none;
+        position:absolute; right:10px;
+        top:50%; transform:translateY(-50%);
+        font-size:30px; 
+    }
+
+}
