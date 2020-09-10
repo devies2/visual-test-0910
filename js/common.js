@@ -22,6 +22,12 @@
         $('#kimBox').load(url)
     })
 
+    $('h1 a').on('click',function(e){
+        e.preventDefault();
+        var url = (this).attr('href');
+        $('#kimContainer').remove() //현재 로드된 아이 지우고
+        $('#kimBox').load(url); //새로 로드하기
+    })
 
 
 })(jQuery)
